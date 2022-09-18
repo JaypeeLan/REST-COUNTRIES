@@ -1,5 +1,5 @@
 # REST Countries API
-[LIVE] (https://all-rest-countriess.netlify.app/)
+[LIVE](https://all-rest-countriess.netlify.app/) <br/>
 Built with react js and [REST Countries API](https://restcountries.com) <br/>
 loader from [React loading icons](https://www.npmjs.com/package/react-loading-icons) <br/>
 I removed unused dependencies with [depcheck](https://www.npmjs.com/package/depcheck) <br/>
