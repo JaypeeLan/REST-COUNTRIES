@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+body,
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   display: flex;
   flex-wrap: wrap;
@@ -17,14 +22,13 @@
   margin-left: auto;
   justify-content: center;
   margin-bottom: 50px;
- 
 }
 input {
   width: 92%;
   padding: 10px;
 }
 
-input:focus{
+input:focus {
   outline: none;
   border: 1px dashed rgb(249, 243, 244);
   background-color: rgb(18, 107, 107);
@@ -52,19 +56,18 @@ input:focus{
   -o-transform: scale(1.07);
 }
 
-.country-info{
+.country-info {
   padding: 10px;
 }
 
-.country-info h3{
-padding-bottom: 10px;
+.country-info h3 {
+  padding-bottom: 10px;
 }
 
 .country img {
   height: 100px;
   width: 200px;
   text-align: center;
-
 }
 
 .country-info {
@@ -93,7 +96,7 @@ padding-bottom: 10px;
   padding: 30px;
 }
 
-.pop-up-content{
+.pop-up-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -116,21 +119,19 @@ button {
 /* ---------------------------- */
 
 @media (max-width: 800px) {
+  .pop-up-content {
+    padding-top: 0;
+    flex-direction: column;
+  }
+  .pop-up-container > div {
+    padding-top: 5px;
+  }
 
- .pop-up-content{
-  padding-top: 0;
-  flex-direction: column;
- }
- .pop-up-container > div{
-  padding-top: 5px;
- }
+  .pop-up-content > div > * {
+    padding-bottom: 5px;
+  }
 
- .pop-up-content > div > * {
-  padding-bottom: 5px;
-}
-
-.pop-up-content > div{
-  padding-top: 30px;
-}
-
+  .pop-up-content > div {
+    padding-top: 30px;
+  }
 }
