@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#input {
+  position: absolute;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  margin-bottom: 50px;
+ 
+}
+input {
+  width: 92%;
+  padding: 10px;
+}
+
+input:focus{
+  outline: none;
+  border: 1px dashed rgb(249, 243, 244);
+  background-color: rgb(18, 107, 107);
+}
+.countries {
+  text-align: center;
+  padding: 25px 25px 0 30px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.country {
+  border: 1px dotted rgb(161, 110, 110);
+  background-color: rgb(117, 77, 77);
+  width: 200px;
+  max-width: 100%;
+}
+
+.country:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  -o-transform: scale(1.07);
+}
+
+.country-info{
+  padding: 10px;
+}
+
+.country-info h3{
+padding-bottom: 10px;
+}
+
+.country img {
+  height: 100px;
+  width: 200px;
+  text-align: center;
+
+}
+
+.country-info {
+  text-align: left;
+}
+
+/* --------------------------- */
+.pop-up-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+}
+.pop-up-header {
+  width: 100%;
+  text-align: right;
+}
+.pop-up-container > div {
+  width: 90vw;
+  height: 90vh;
+  background-color: rgb(39, 57, 63);
+  margin: auto;
+  padding: 30px;
+}
+
+.pop-up-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.pop-up-content > div > * {
+  padding-bottom: 15px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: rgb(126, 102, 102);
+  border: none;
+  outline: none;
+  margin: 20px;
+}
+
+/* ---------------------------- */
+
+@media (max-width: 800px) {
+
+ .pop-up-content{
+  padding-top: 0;
+  flex-direction: column;
+ }
+ .pop-up-container > div{
+  padding-top: 5px;
+ }
+
+ .pop-up-content > div > * {
+  padding-bottom: 5px;
+}
+
+.pop-up-content > div{
+  padding-top: 30px;
+}
+
+}
